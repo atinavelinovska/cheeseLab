@@ -1,0 +1,129 @@
+/* 
+Cheese yellow #f4cc1f 
+Tint of yellow #fcf4d2 
+Black #000000 
+White #ffffff 
+Gray #303030 
+Light #555555 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+body::before {
+    content: "";
+    display: block;
+    height: 100px; 
+    width: 100%;
+}
+
+
+#home {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 20px 100px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; 
+}
+
+.home-header {
+    width: 1160px; 
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px; 
+}
+
+#home h2 {
+    font-size: 2rem;
+}
+
+.yellow-line {
+    border: none;
+    height: 2px;
+    background-color: #f4cc1f; 
+    margin-top: 35px; 
+    margin-bottom: 100px;
+    width: 100%; 
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.description:last-of-type {
+    margin-bottom: 60px; 
+}
+
+/* stil na slike*/
+.carousel {
+    width: 1160px; 
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; 
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px; 
+    width: calc(100% + 20px); /* da bi blo pravilno*/
+}
+
+.carousel-item {
+    flex: 0 0 calc(33.33% - 20px); 
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #303030; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
